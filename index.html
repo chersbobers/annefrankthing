@@ -16,8 +16,8 @@
 
         body {
             font-family: 'Open Sans', sans-serif;
-            background-color: #f4f4f4; /* Light gray for a clean background */
-            color: #333; /* Dark gray text for readability */
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text */
             line-height: 1.6;
             padding: 0;
             margin: 0;
@@ -53,14 +53,14 @@
             background-color: white;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            color: #555; /* Subtle text color for the main content */
+            color: #555;
         }
 
         h2 {
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #2c3e50; /* Dark blue-gray for headings */
+            color: #2c3e50;
             text-align: center;
         }
 
@@ -72,6 +72,27 @@
             text-align: justify;
         }
 
+        /* Info Section Styling */
+        .info-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .info-section p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Video Section */
         .video-container {
             text-align: center;
             margin: 40px 0;
@@ -79,7 +100,7 @@
 
         video {
             width: 100%;
-            max-width: 900px;
+            max-width: 600px; /* Shorter, smaller video */
             border-radius: 8px;
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -139,13 +160,27 @@
 <main>
     <h2>About Anne Frank</h2>
     <p>
-        The Diary of Anne Frank is the powerful, real-life account of a young Jewish girl hiding from the Nazis during World War II. Written between 1942 and 1944 while Anne Frank and her family lived in a secret annex in Amsterdam, this diary captures her hopes, fears, and reflections with remarkable honesty and insight. Despite the horrors surrounding her, Anne’s words reveal a vibrant spirit and a deep longing for freedom and understanding. Her story remains a timeless testament to the resilience of the human spirit.
+        Anne Frank's diary is one of the most famous accounts of the Holocaust. Written while hiding from the Nazis during World War II, Anne's diary reveals her innermost thoughts, fears, and hopes during a time of extreme hardship. This website aims to provide a glimpse into Anne Frank's world, as well as her legacy.
     </p>
+
+    <div class="info-section">
+        <h3>Early Life</h3>
+        <p>
+            Anne Frank was born in 1929 in Frankfurt, Germany. In 1933, her family moved to Amsterdam to escape the growing Nazi regime. After the German invasion of the Netherlands, Anne and her family went into hiding in the secret annex of her father’s office building, where she would spend two years writing in her diary.
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h3>The Diary of Anne Frank</h3>
+        <p>
+            Anne Frank's diary was published posthumously in 1947. The book has since been translated into over 70 languages and is one of the most widely read books in the world. Anne's honest and poignant account of her life in hiding has inspired millions.
+        </p>
+    </div>
 
     <div class="video-container">
         <h2>↓ Watch Our Video ↓</h2>
         <video controls>
-            <source src="anne-frank-documentary.mp4" type="video/mp4">
+            <source src="anne-frank-short-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
